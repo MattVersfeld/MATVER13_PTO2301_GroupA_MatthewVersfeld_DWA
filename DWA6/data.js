@@ -2,9 +2,13 @@
 export const BOOKS_PER_PAGE = 36;
 
 export const htmlQuerieSelectors = {
-	Genres: document.querySelector('[data-search-genres]'),
-	Authors: document.querySelector('[data-search-authors]'),
-  books: document.querySelector('[data-list-items]')
+  Genres: document.querySelector('[data-search-genres]'),
+  Authors: document.querySelector('[data-search-authors]'),
+  books: document.querySelector('[data-list-items]'),
+  button: document.querySelector('[data-list-button]'),
+  message: document.querySelector('[data-list-message]'),
+  active: document.querySelector('[data-list-active]'),
+  previewButton: document.querySelectorAll('.preview'),
 }
 
 export const authors = {
