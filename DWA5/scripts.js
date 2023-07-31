@@ -63,37 +63,3 @@ form.addEventListener("submit", (event) => {
     result.innerText = Math.trunc(checkTheNumbers(dividend) / checkTheNumbers(divider))
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// if (dividend === '' || divider === '') {
-//         result.innerText = 'Division not performed. Both values are required in inputs. Try again'
-//       } else if (checkIfNeg(dividend) === -1 || checkIfNeg(divider) === -1) {
-//         result.innerText = 'Division not performed. Invalid number provided. Try again'
-//         console.error('Negative number was used');
-//         setTimeout(() => {  console.clear(); }, 3000);
-//       } else {
-//         result.innerText = Math.trunc(dividend / divider)
-//       }
-    
-//       if (parseInt(dividend) !== Number || parseInt(divider) !== Number) {
-//         result.innerText = 'Something critical went wrong. Please reload the page'
-//       }else {
