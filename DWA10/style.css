@@ -1,0 +1,42 @@
+html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 100vh;
+}
+
+header {
+    align-items: center;
+    display: flex;
+    margin: auto;
+}
+
+.title {
+    padding: 1rem;
+    margin: auto;
+    position: relative;
+    text-align: center;
+}
+
+.reset {
+    margin: auto;
+}
+
+.value::part(base) {
+    width: 100vw;
+    height: 50vh;
+}
+
+.value::part(input) {
+    display: block;
+    margin: auto;
+    text-align: center;
+
+}
+
+.button::part(base) {
+    width: 50vw;
+}
+
+.switch::part(base) {
+    margin: auto;
+    padding: 1rem;
+}

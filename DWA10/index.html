@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css" </link>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.8.0/cdn/themes/light.css" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.8.0/cdn/shoelace-autoloader.js"
+        defer></script>
+
+    <script src="./scripts.js" type="module" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.8.0/cdn/themes/dark.css" />
+
+</head>
+
+<body>
+    <header>
+        <sl-switch class="switch" data-switch></sl-switch>
+        <h1 class="title"><sl-avatar
+                image="https://img.poki.com/cdn-cgi/image/quality=78,width=314,height=314,fit=cover,f=auto/8cf0a620f18961ce5e3f77038d0d0b97.png"
+                shape="rounded" label="User avatar"></sl-avatar>Matt's Counter</h1>
+        <div class="animation-form">
+            <sl-animation name="rubberBand" duration="1000" iterations="1">
+                <sl-button variant="primary">Reset</sl-button>
+            </sl-animation>
+        </div>
+    </header>
+
+    <sl-input class="value" data-value value="0" type="number" size="large" disabled></sl-input>
+    <div class="button_wrapper">
+        <sl-button-group label="Alignment">
+            <sl-tooltip content="Press on me to subtract">
+                <sl-button class="button" data-subtract variant="default" size="large"
+                    style="width: 100%;">-</sl-button>
+            </sl-tooltip>
+
+            <sl-tooltip content="Press on me to add">
+                <sl-button class="button" data-add variant="default" size="large" style="width: 100%;">+</sl-button>
+            </sl-tooltip>
+        </sl-button-group>
+    </div>
+</body>
+
+</html>
