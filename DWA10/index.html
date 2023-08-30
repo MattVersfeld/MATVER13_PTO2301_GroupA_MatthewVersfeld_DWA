@@ -22,11 +22,6 @@
         <h1 class="title"><sl-avatar
                 image="https://img.poki.com/cdn-cgi/image/quality=78,width=314,height=314,fit=cover,f=auto/8cf0a620f18961ce5e3f77038d0d0b97.png"
                 shape="rounded" label="User avatar"></sl-avatar>Matt's Counter</h1>
-        <div class="animation-form">
-            <sl-animation name="rubberBand" duration="1000" iterations="1">
-                <sl-button variant="primary">Reset</sl-button>
-            </sl-animation>
-        </div>
     </header>
 
     <sl-input class="value" data-value value="0" type="number" size="large" disabled></sl-input>
@@ -43,5 +38,16 @@
         </sl-button-group>
     </div>
 </body>
+
+<footer class="reset">
+    <div class="alert-duration">
+        <sl-button variant="primary">Reset</sl-button>
+
+        <sl-alert variant="primary" duration="3000" closable>
+            <sl-icon slot="icon" name="info-circle"></sl-icon>
+            Counter has been reset!
+        </sl-alert>
+    </div>
+</footer>
 
 </html>

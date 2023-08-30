@@ -3,6 +3,10 @@ html {
     height: 100vh;
 }
 
+.alert-duration sl-alert {
+    margin-top: var(--sl-spacing-medium);
+}
+
 header {
     align-items: center;
     display: flex;
@@ -39,4 +43,9 @@ header {
 .switch::part(base) {
     margin: auto;
     padding: 1rem;
+}
+
+.reset {
+    margin-top: 5%;
+    justify-content: center;
 }

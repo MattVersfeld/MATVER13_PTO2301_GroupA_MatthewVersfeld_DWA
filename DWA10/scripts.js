@@ -16,15 +16,15 @@ const addhandler = () => {
 subtractRef.addEventListener('click', subtracthandler)
 addRef.addEventListener('click', addhandler)
 
-//Bounce 
-const container = document.querySelector('.animation-form');
-const animation = container.querySelector('sl-animation');
+//reset
+const container = document.querySelector('.alert-duration');
 const button = container.querySelector('sl-button');
+const alert = container.querySelector('sl-alert');
 
 button.addEventListener('click', () => {
-    animation.play = true;
+    alert.show();
     valueRef.value = 0
-});
+})
 
 //day mode
 const switchRef = document.querySelector('[data-switch]')
