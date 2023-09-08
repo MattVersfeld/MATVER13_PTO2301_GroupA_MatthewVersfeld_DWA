@@ -26,6 +26,9 @@ export class MyState extends LitElement {
                 },
                 decrease: () => {
                     this.counter--
+                    if (this.counter === this.min) {
+                        this.phase = this.machine.states.min.type
+                    }
                 }
             },
 
@@ -45,7 +48,12 @@ export class MyState extends LitElement {
 
             min: {
                 type: 'min',
-                increase: () => { },
+                increase: () => {
+                    this.counter++
+                    if (this.counter > this.min) {
+                        this.phase = this.machine.states.normal.type
+                    }
+                },
                 decrease: () => { }
             },
         }
